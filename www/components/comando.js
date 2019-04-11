@@ -1,17 +1,17 @@
 // This is a JavaScript file
-L.mapquest.key = '	xHmkdc5vLO1qt3U9ooBdyjIV2DAupiwY';
-var baseLayer = L.mapquest.tileLayer('dark');
+mapquest.key = '	xHmkdc5vLO1qt3U9ooBdyjIV2DAupiwY';
+var baseLayer = mapquest.tileLayer('dark');
 
-L.mapquest.geocoding().geocode(['New York, NY'], showMap);
+mapquest.geocoding().geocode(['New York, NY'], showMap);
 
 function showMap(err, data) {
   var map = createMap();
-  map.addControl(L.mapquest.control());
+  map.addControl(mapquest.control());
   addLayerControl(map);
 }
 
 function createMap() {
-  var map = L.mapquest.map('map', {
+  var map = mapquest.map('map', {
     center: [40.7237, -73.9825],
     zoom: 14,
     layers: baseLayer
@@ -21,10 +21,10 @@ function createMap() {
 
 function addLayerControl(map) {
   L.control.layers({
-    'Map': L.mapquest.tileLayer('map'),
-    'Satellite': L.mapquest.tileLayer('satellite'),
-    'Hybrid': L.mapquest.tileLayer('hybrid'),
-    'Light': L.mapquest.tileLayer('light'),
+    'Map': mapquest.tileLayer('map'),
+    'Satellite': mapquest.tileLayer('satellite'),
+    'Hybrid': mapquest.tileLayer('hybrid'),
+    'Light': mapquest.tileLayer('light'),
     'Dark': baseLayer
   }, {}, { position: 'topleft'}).addTo(map);
 }
