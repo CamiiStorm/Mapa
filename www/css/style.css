@@ -2,12 +2,11 @@
 body {
   background-color: lightblue;
  background: url(https://image.freepik.com/vetores-gratis/mapa-urbano-dos-gps-com-pinos_23-2147617091.jpg);
- border-radius: 8px;
 }
 
 h1 {
 
- color: rgb(15, 0, 0);
+ color: rgb(0, 15, 9);
   font-style: normal;;
   font-size: 38px;
   text-decoration: underline;
@@ -21,11 +20,34 @@ h1 {
   
 }
 p {
-  background-color: white; 
+  background-color: transparent rgb(255, 255, 255); 
   color: black; 
   border: 3px solid rgb(3, 3, 3);
   width: 400px
   marginto top,150px;
+  text-transform: uppercase;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  padding: 0px;
+  font-weight:900; 
+
+  
+}
+#btn{
+  padding-left: 55px;
+  padding-right: 55px;
+
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #131212;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 
 }
 
@@ -33,4 +55,12 @@ p {
   width: 100%;
   height: 300px;
 }
+
+
+
+#map{
+  width: 100%;
+  height: 300px;
+}
+
 
